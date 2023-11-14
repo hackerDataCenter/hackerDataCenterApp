@@ -1,15 +1,15 @@
 import {useState, useEffect } from "react";
 
 const MemeJokeQuote = () => {
-  const [content, setContent] = useState("");
+  const [content, setContent] = useState([]);
 
   useEffect(() => {
     //Abrufen eines zufälligen Chuck Norris witz von einer API
     const fetchRandomContent = async () => {
       try {
-        const response = await fetch("https://api.chucknorris.io/jokes/random");
+        const response = await fetch("https://api.chucknorris.io/jokes/random?category=dev");
         const data = await response.json();
-        setContent(data.content);
+        setContent(data);
       } catch (error) {
         console.error("Fehler beim Abrufen von Inhalten:", error);
       }
@@ -20,7 +20,10 @@ const MemeJokeQuote = () => {
   }, []);
   return (
     <>
-      <p>{content}</p>
+    <div>
+    <p>{content.value}</p>
+    </div>
+      
     </>
   );
 };

@@ -13,7 +13,7 @@ function App() {
         </div>
         <div className="Börse"></div>
         <div className="quoteJokeFact">
-          <MemeJokeQuote />
+          <MemeJokeQuote /> 
         </div>
         <div className="orderPizza"></div>
         <div className="chat"></div>
