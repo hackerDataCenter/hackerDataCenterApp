@@ -16,7 +16,7 @@ const Wetter = () => {
           `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_Key}&units=metric&lang=de`
         );
         const data = await res.json()
-        console.log(data);
+        console.log(data)
         setWeatherData(data)
       } catch (error) {
         console.log(error)
@@ -36,7 +36,6 @@ const Wetter = () => {
 
   return (
     <section className="wetterSection">
-      <div className="wetterDiv">
         <h1>Wetter in deiner Stadt</h1>
         <form onSubmit={(e) => submitHandler(e)}>
           <input type="text" name="cityInput" placeholder="Trage deine Stadt ein" />
@@ -55,7 +54,6 @@ const Wetter = () => {
             </div>
           </div>
         )}
-      </div>
     </section>
   )
 }

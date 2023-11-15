@@ -1,22 +1,23 @@
 .wetterSection {
     font-family: 'Arial', sans-serif;
+    font-size: 1.1.rem;
+    min-width: 10rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: aliceblue;
 }
   
 form {
     display: flex;
-    justify-content: space-around;
+    margin: auto;
 }
   
 input {
     padding: 8px;
-    width: 200px;
     border: 2px solid lightgrey;
-    border-radius: 25px;
+    border-radius: 25px 0px 0px 25px;
 }
   
 button {
@@ -24,11 +25,15 @@ button {
     background-color: #3abce3;
     color: white;
     border: none;
-    border-radius: 25px;
+    border-radius: 0px 25px 25px 0px;
     cursor: pointer;
 }
+
+/* form, .temp, .weather{
+    width: 90%;
+} */
   
-.temp {
+.temp, .weather {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -36,10 +41,6 @@ button {
 
 .temp p, .weather p {
     font-weight: bold;
-}
-  
-.weather {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    display: inline;
+    width: 6rem;
 }
