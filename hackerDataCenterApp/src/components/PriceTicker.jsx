@@ -21,7 +21,7 @@ const PriceTicker = () => {
     }
     fetchExchangeRates();
 
-    // Fetch exchange rates every 5 seconds
+    //! Fetch exchange rates every 5 seconds
     const intervalId = setInterval(fetchExchangeRates, 5000);
 
     // Clean up the interval when the component unmounts to avoid memory leaks

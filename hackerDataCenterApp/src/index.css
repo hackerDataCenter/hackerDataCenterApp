@@ -3,9 +3,11 @@
 }
 
 .container {
+  width: 100vw;
+  height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 30px 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 30px repeat(4, 1fr); 
   gap: 3px 3px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -26,6 +28,9 @@
 
 .chat {
   grid-area: chat;
+  overflow: auto;
+  min-width: 0;
+  min-height: 0;
 }
 
 .quoteJokeFact {
@@ -46,6 +51,14 @@
 
 .stockMarket {
   grid-area: stockMarket;
+  /* scrollbar machen mit overflow:  */
+  overflow: scroll;
+  overflow-x: hidden;
+  min-width: 0;
+  min-height: 0;
+
+  /* max-height: 33%; */
+  /* max-height: 1fr; */
 }
 
 .deepL {
