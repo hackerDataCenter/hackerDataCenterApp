@@ -27,8 +27,15 @@
   grid-area: 1 / 4 / 2 / 5; 
 }
 
-.quoteJokeFact { 
-  grid-area: 4 / 4 / 5 / 5; 
+.quoteJokeFact {
+  grid-area: 4 / 4 / 5 / 5;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+}
+
+.quoteJokeFactWrapper.expanded {
+  grid-area: 1 / 1 / 5 / 5;
 }
 
 .orderPizza { 

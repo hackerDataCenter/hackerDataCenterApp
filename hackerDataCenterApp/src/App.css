@@ -1,0 +1,39 @@
+.container {
+    background-color: #0D0630;
+}
+
+.quoteJokeFact img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.modal {
+    width: 75%;
+    height: 70vh;
+    position: absolute;
+    left: 12.5%;
+    top: 15vh;
+    background-color: red;
+    z-index: 2;
+    
+    
+}
+.close {
+    position: absolute;
+    right: 0.3rem;
+    top: 0.3rem;
+    font-size: 2rem;
+
+
+}
+.modalBG {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #24262899;
+}
+.placeHolder-Button {
+    height: 100%;
+    width: 100%;
+}
