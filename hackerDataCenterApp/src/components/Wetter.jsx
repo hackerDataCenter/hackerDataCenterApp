@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react"
-import "./Wetter.css"
+import styles from "./wetter.module.css"
 
 const Wetter = () => {
   const [weatherData, setWeatherData] = useState()
-  const [city, setCity] = useState("")
+  const [city, setCity] = useState("Germany")
   const API_Key = "580c2c1d032e7ff14e18860609014030"
 
   useEffect(() => {}, []);
@@ -35,22 +35,21 @@ const Wetter = () => {
   };
 
   return (
-    <section className="wetterSection">
-        <h1>Wetter in deiner Stadt</h1>
-        <form onSubmit={(e) => submitHandler(e)}>
+    <section className={styles.wetterSection}>
+        <h1 className={styles.h1}>{city}</h1>
+        <form onSubmit={(e) => submitHandler(e)} className={styles.form}>
           <input type="text" name="cityInput" placeholder="Trage deine Stadt ein" />
           <button type="submit">suchen</button>
         </form>
         {weatherData && (
           <div>
-            <h2>{city}</h2>
-            <div className="temp">
-              <p>Aktuell {weatherData.main.temp}°C</p>
-              <p>Gefühlt wie {weatherData.main.feels_like}°C</p>
+            <div className={styles.temp}>
+              <p>Aktuell: {weatherData.main.temp}°C</p>
+              <p>Gefühlt: {weatherData.main.feels_like}°C</p>
             </div>
-            <div className="weather">
+            <div className={styles.weather}>
               <p>{weatherData.weather[0].description}</p>
-              <img src={getWeatherIconUrl(weatherData.weather[0].icon)} alt={weatherData.weather[0].description} width="70px" />
+              <img src={getWeatherIconUrl(weatherData.weather[0].icon)} alt={weatherData.weather[0].description} />
             </div>
           </div>
         )}

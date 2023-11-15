@@ -1,5 +1,6 @@
 import "./App.css";
 import MemeJokeQuote from "./components/MemeJokeQuote.jsx";
+import { News } from "./components/News.jsx";
 import Wetter from "./components/Wetter.jsx";
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
   return (
     <>
       <div className="container">
-        <div className="news"></div>
+        <div className="news">
+          <News />
+        </div>
         <div className="wetter">
           <Wetter />
         </div>

@@ -1,0 +1,27 @@
+.h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0.7rem;
+    position: sticky;
+    top: 0;
+    background-color:  rgb(104, 18, 18);
+    color: white;
+}
+
+.h3 {
+    font-size: 1.1rem;
+}
+
+.container {
+    background-color: white;
+}
+
+.newsContainer{
+    padding: 0.5rem;
+    margin: 0;
+    height: 9rem;
+}
+
+.author{
+    text-align: center;
+}

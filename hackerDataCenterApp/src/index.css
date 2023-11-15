@@ -1,13 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
 .container {  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 2px 2px;
+  grid-template-rows: repeat(4,25vh);
+  gap: 8px;
   grid-auto-flow: row;
+  background-color: #222426;
 }
 
 .news { 
-  grid-area: 2 / 1 / 4 / 2; 
+  grid-area: 2 / 1 / 4 / 2;
+  overflow-y: scroll; 
 }
 
 .wetter { 
