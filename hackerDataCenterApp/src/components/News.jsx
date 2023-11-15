@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import styles from "./news.module.css"
 
 export const News = () => {
   const [newsData, setNewsData] = useState([])
@@ -22,22 +23,17 @@ export const News = () => {
   }, [])
 
   return (
-    <div>
-      <h1>Top News</h1>
-      <ul>
-        {newsData.map((article, index) => (
-          <li key={index}>
-            <h3>{article.title}</h3>
-            <p>{article.description}</p>
-            <p>Author: {article.author}</p>
-            <p>Herausgegeben von: {article.publishedAt}</p>
-            <a href={article.url} target="_blank" rel="noopener noreferrer">
-              Read more
-            </a>
-            <hr />
-          </li>
+    <div className={styles.container}>
+        <h1 className={styles.h1}>Top News</h1>{newsData.map((article, index) => (
+            <div key={index} className={styles.newsContainer}>
+                <h3 className={styles.h3}>{article.title}</h3>
+                <p>{article.description}</p>
+                <a href={article.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className={styles.readmore}>
+                <i className="fa-solid fa-angles-right"></i> <span className={styles.span}>Read more</span>
+                </a>
+                <p className={styles.author}>Quelle: {article.author}</p>
+            </div>
         ))}
-      </ul>
     </div>
   )
 }
