@@ -1,51 +1,61 @@
-.container {  
+* {
+  font-family: monospace;
+}
+
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 2px 2px;
+  grid-template-rows: 30px 1fr 1fr 1fr 1fr;
+  gap: 3px 3px;
   grid-auto-flow: row;
+  grid-template-areas:
+    "newsTicker newsTicker newsTicker newsTicker"
+    "wetter stockMarket stockMarket tinder"
+    "news sthCoolLikeNasa sthCoolLikeNasa chat"
+    "news sthCoolLikeNasa sthCoolLikeNasa chat"
+    "deepL darknetMarket orderPizza quoteJokeFact";
 }
 
-.news { 
-  grid-area: 2 / 1 / 4 / 2; 
+.newsTicker {
+  grid-area: newsTicker;
 }
 
-.wetter { 
-  grid-area: 1 / 1 / 2 / 2; 
+.sthCoolLikeNasa {
+  grid-area: sthCoolLikeNasa;
 }
 
-.Börse { 
-  grid-area: 1 / 4 / 2 / 5; 
+.chat {
+  grid-area: chat;
 }
 
-.quoteJokeFact { 
-  grid-area: 4 / 4 / 5 / 5; 
+.quoteJokeFact {
+  grid-area: quoteJokeFact;
 }
 
-.orderPizza { 
-  grid-area: 4 / 3 / 5 / 4; 
+.orderPizza {
+  grid-area: orderPizza;
 }
 
-.chat { 
-  grid-area: 2 / 4 / 4 / 5; 
+.tinder {
+  grid-area: tinder;
 }
 
-.deepL { 
-  grid-area: 4 / 1 / 5 / 2; 
+.darknetMarket {
+  grid-area: darknetMarket;
 }
 
-.sthCoolLikeNasa { 
-  grid-area: 2 / 2 / 4 / 4; 
+.stockMarket {
+  grid-area: stockMarket;
 }
 
-.darknetMarket { 
-  grid-area: 4 / 2 / 5 / 3; 
+.deepL {
+  grid-area: deepL;
 }
 
-.stockMarket { 
-  grid-area: 1 / 2 / 2 / 4; 
+.wetter {
+  grid-area: wetter;
 }
 
-.tinder { 
-  grid-area: 1 / 4 / 2 / 5; 
+.news {
+  grid-area: news;
 }
