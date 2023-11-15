@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const MemeJokeQuote = () => {
   const [content, setContent] = useState("");
   const [isMeme, setIsMeme] = useState(false);
-  const [expanded, setExpanded] = useState (false);
+  
   useEffect(() => {
     const url = isMeme
     ? "https://api.imgflip.com/get_memes"
@@ -33,7 +33,6 @@ const MemeJokeQuote = () => {
         {content && isMeme ? <img src={content} alt="Meme" /> : <p>{content}</p>}
       </div>
       <button onClick={() => setIsMeme(!isMeme)}>Wechseln</button>
-      <button onClick={() => setExpanded(!expanded)}>expand</button>
       
     </>
   );
