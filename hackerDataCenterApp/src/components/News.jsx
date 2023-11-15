@@ -28,11 +28,10 @@ export const News = () => {
             <div key={index} className={styles.newsContainer}>
                 <h3 className={styles.h3}>{article.title}</h3>
                 <p>{article.description}</p>
-                <a href={article.url} target="_blank" rel="noopener noreferrer">
-                    Read more
+                <a href={article.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className={styles.readmore}>
+                <i className="fa-solid fa-angles-right"></i> <span className={styles.span}>Read more</span>
                 </a>
                 <p className={styles.author}>Quelle: {article.author}</p>
-                <p></p>
             </div>
         ))}
     </div>

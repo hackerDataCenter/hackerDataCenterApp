@@ -5,6 +5,11 @@
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: #222426;
+}
+
 .container {  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

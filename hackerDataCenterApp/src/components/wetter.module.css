@@ -21,13 +21,13 @@
     padding: 0 1rem;
 }
   
-input {
+.input {
     padding: 8px;
     border: 2px solid lightgrey;
     border-radius: 25px 0px 0px 25px;
 }
   
-button {
+.button {
     padding: 8px 16px;
     background-color: #3abce3;
     color: white;

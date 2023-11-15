@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
 import styles from "./wetter.module.css"
 
-const Wetter = () => {
+export const WeatherModal = () => {
   const [weatherData, setWeatherData] = useState()
   const [city, setCity] = useState("Germany")
-  const API_Key = "580c2c1d032e7ff14e18860609014030"
+  const API_Key = "cb80737e46b0055f5ec62f26a68f6505"
 
   useEffect(() => {}, []);
 
@@ -56,5 +56,3 @@ const Wetter = () => {
     </section>
   )
 }
-
-export default Wetter;

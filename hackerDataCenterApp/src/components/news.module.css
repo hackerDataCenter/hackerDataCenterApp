@@ -1,3 +1,7 @@
+.container {
+    background-color: white;
+}
+
 .h1 {
     text-align: center;
     font-size: 1.6rem;
@@ -8,20 +12,29 @@
     color: white;
 }
 
+.newsContainer{
+    padding: 0.5rem;
+    border: solid;
+    margin: 0.5rem;
+}
+
 .h3 {
     font-size: 1.1rem;
 }
 
-.container {
-    background-color: white;
-}
-
-.newsContainer{
-    padding: 0.5rem;
-    margin: 0;
-    height: 9rem;
-}
-
 .author{
     text-align: center;
+}
+
+.readmore {
+    display: block;
+    padding: 0.8rem;
+}
+
+.span {
+    padding-left: 0.5rem;
+}
+
+.time {
+    padding: 0.8rem;
 }
