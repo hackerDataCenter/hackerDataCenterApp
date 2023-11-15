@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const MemeJokeQuote = () => {
   const [content, setContent] = useState("");
   const [isMeme, setIsMeme] = useState(false);
-
+  const [expanded, setExpanded] = useState (false);
   useEffect(() => {
     const url = isMeme
     ? "https://api.imgflip.com/get_memes"
@@ -13,8 +13,9 @@ const MemeJokeQuote = () => {
         const response = await fetch(url);
         const data = await response.json();
   
-        
-        const contentValue = isMeme ? data.data.memes[0].url : data.value;
+        const randomNum = Math.floor(Math.random() * 99) ;
+        console.log(randomNum);
+        const contentValue = isMeme ? data.data.memes[randomNum].url : data.value;
   
         setContent(contentValue);
       } catch (error) {
@@ -24,12 +25,16 @@ const MemeJokeQuote = () => {
     fetchRandomContent(url); setContent("")
   }, [isMeme]);
 
+
+
   return (
     <>
       <div>
         {content && isMeme ? <img src={content} alt="Meme" /> : <p>{content}</p>}
       </div>
       <button onClick={() => setIsMeme(!isMeme)}>Wechseln</button>
+      <button onClick={() => setExpanded(!expanded)}>expand</button>
+      
     </>
   );
 };
