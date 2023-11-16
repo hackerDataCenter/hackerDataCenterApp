@@ -24,7 +24,7 @@ export const Modal = ({fetchIdent}) => {
             
             break;
         case 'essen':
-            
+            render = <EssenBestellen/>
             break;
         case 'bitcoin':
             

@@ -46,17 +46,21 @@ function App() {
         <div className="wetter" onClick={(e) => modalHaendler(e, "weather")}>
           <Wetter />
         </div>
-        <div className="boerse"><button className="placeHolder-Button" onClick={(e) => modalHaendler(e, "joke")}></button></div>
+        <div className="matrix">
+          <img src="https://www.techgrube.de/wp-content/uploads/2018/09/cmatrix-animated.gif" alt="Matrix terminal" className="matrixterminal" />
+        </div>
         <div className="quoteJokeFact">
           <MemeJokeQuote /> 
         </div>
         <div className="orderPizza" onClick={(e) => modalHaendler(e, "essen")}>
         <EssenBestellen/>
         </div>
+
         <div className="chat" >
           <ChatBot />
         </div>
         <div className="deepL"><button className="placeHolder-Button" onClick={(e) => modalHaendler(e, "deepl")}></button ></div>
+
         <div className="sthCoolLikeNasa"><button className="placeHolder-Button" onClick={(e) => modalHaendler(e, "bitcoin")}>Bitcoin</button></div>
         <div className="darknetMarket"><button className="placeHolder-Button" onClick={(e) => modalHaendler(e, "darknetMarket")}>darknetMarket</button></div>
         <div className="stockMarket">

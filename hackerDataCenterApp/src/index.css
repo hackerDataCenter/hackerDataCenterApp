@@ -46,12 +46,18 @@ a {
   background-color: lightgrey;
 }
 
+
 .chat {
   grid-area: chat;
   overflow: auto;
   min-width: 0;
   min-height: 0;
   background-color: lightgrey;
+
+}
+
+.matrixterminal{
+  width: 368px;
 }
 
 .quoteJokeFact {
@@ -77,6 +83,7 @@ a {
   background-color: lightgrey;
 }
 
+
 .stockMarket {
   grid-area: stockMarket;
   /* scrollbar machen mit overflow:  */
@@ -88,6 +95,7 @@ a {
 
   /* max-height: 33%; */
   /* max-height: 1fr; */
+
 }
 
 .deepL {
