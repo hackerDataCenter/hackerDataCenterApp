@@ -1,6 +1,10 @@
 * {
   font-family: monospace;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
 }
+
 
 .container {
   width: 100vw;
@@ -18,8 +22,18 @@
     "deepL darknetMarket orderPizza quoteJokeFact";
 }
 
+a {
+  text-decoration: none;
+  color: #222426;
+}
+
 .newsTicker {
   grid-area: newsTicker;
+}
+
+.news { 
+  grid-area: news;
+  overflow-y: scroll;
 }
 
 .sthCoolLikeNasa {
@@ -35,6 +49,9 @@
 
 .quoteJokeFact {
   grid-area: quoteJokeFact;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
 }
 
 .orderPizza {
@@ -69,6 +86,3 @@
   grid-area: wetter;
 }
 
-.news {
-  grid-area: news;
-}
