@@ -53,13 +53,13 @@ function App() {
         <div className="orderPizza" onClick={(e) => modalHaendler(e, "essen")}>
         <EssenBestellen/>
         </div>
-        <div className="chat" onClick={(e) => modalHaendler(e, "chat")}>
+        <div className="chat" >
           <ChatBot />
         </div>
         <div className="deepL"><button className="placeHolder-Button" onClick={(e) => modalHaendler(e, "deepl")}></button ></div>
         <div className="sthCoolLikeNasa"><button className="placeHolder-Button" onClick={(e) => modalHaendler(e, "bitcoin")}>Bitcoin</button></div>
         <div className="darknetMarket"><button className="placeHolder-Button" onClick={(e) => modalHaendler(e, "darknetMarket")}>darknetMarket</button></div>
-        <div className="stockMarket" onClick={(e) => modalHaendler(e, "stockMarket")}>
+        <div className="stockMarket">
           <BrowserRouter>
             <ChakraProvider>
               <Routes>

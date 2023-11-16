@@ -7,8 +7,10 @@
 
 
 .container {
-  width: 100vw;
+  /* width: 100vw; */
+  /* overflow-x: hidden; */
   height: 100vh;
+  overflow-y: hidden;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 30px repeat(4, 1fr); 
@@ -20,6 +22,7 @@
     "news sthCoolLikeNasa sthCoolLikeNasa chat"
     "news sthCoolLikeNasa sthCoolLikeNasa chat"
     "deepL darknetMarket orderPizza quoteJokeFact";
+    background-color: #222426;
 }
 
 a {
@@ -29,15 +32,18 @@ a {
 
 .newsTicker {
   grid-area: newsTicker;
+  background-color: lightgrey;
 }
 
 .news { 
   grid-area: news;
   overflow-y: scroll;
+  /* background-color: lightgrey; */
 }
 
 .sthCoolLikeNasa {
   grid-area: sthCoolLikeNasa;
+  background-color: lightgrey;
 }
 
 .chat {
@@ -45,6 +51,7 @@ a {
   overflow: auto;
   min-width: 0;
   min-height: 0;
+  background-color: lightgrey;
 }
 
 .quoteJokeFact {
@@ -52,18 +59,22 @@ a {
   min-width: 0;
   min-height: 0;
   overflow: auto;
+  background-color: lightgrey;
 }
 
 .orderPizza {
   grid-area: orderPizza;
+  background-color: lightgrey;
 }
 
 .tinder {
   grid-area: tinder;
+  background-color: lightgrey;
 }
 
 .darknetMarket {
   grid-area: darknetMarket;
+  background-color: lightgrey;
 }
 
 .stockMarket {
@@ -73,6 +84,7 @@ a {
   overflow-x: hidden;
   min-width: 0;
   min-height: 0;
+  background-color: lightgrey;
 
   /* max-height: 33%; */
   /* max-height: 1fr; */
@@ -80,9 +92,11 @@ a {
 
 .deepL {
   grid-area: deepL;
+  background-color: lightgrey;
 }
 
 .wetter {
   grid-area: wetter;
+  background-color: lightgrey;
 }
 
