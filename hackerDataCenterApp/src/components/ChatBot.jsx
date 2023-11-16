@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import './chatBot.css';
+// import '../components/chatBot.css'
 
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
@@ -12,7 +13,7 @@ const ChatBot = () => {
     const url = new URL("https://www.botlibre.com/rest/api/form-chat");
     url.search = new URLSearchParams({
       application: "5293649029735316214",
-      instance: "26674605",
+      instance: "35225548",
       message: message,
     });
     

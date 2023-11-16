@@ -6,13 +6,13 @@
 }
 
 input[type="text"] {
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
-  // -ms-appearance: none;
-  // -o-appearance: none;
-  // appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   border: none;
-  outline: none;
+  outline: 1px solid blue !important;
   display: block;
   width: 50%;
   border-radius: 0%;
@@ -25,32 +25,32 @@ input[type="text"] {
   position: relative;
 }
 
-.header {
-  background: #050505;
-  color: white;
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
+// .header {
+//   background: #050505;
+//   color: white;
+//   padding: 20px 0;
+//   position: sticky;
+//   top: 0;
+//   z-index: 10;
+// }
 
-h1 {
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
+// h1 {
+//   text-align: center;
+//   color: white;
+//   text-transform: uppercase;
+//   font-size: 20px;
+//   letter-spacing: 2px;
+// }
 
-h1 a {
-  color: white;
-}
+// h1 a {
+//   color: white;
+// }
 
-a {
-  text-decoration: none;
-}
+// a {
+//   text-decoration: none;
+// }
 
-img {
+.coinImg {
   max-width: 100%;
   display: block;
 }
@@ -77,11 +77,10 @@ svg {
   display: flex;
   justify-content: center;
 
-    input {
+    .coinInput {
     border: 1px solid grey;
     padding: 0 24px;
     border-radius: 8px;
-    // line-height: 54px;
   }
 }
 
@@ -122,6 +121,7 @@ svg {
     display: block;
   }
 }
+
 .home-crypto-image {
   width: 30px;
 }
@@ -165,31 +165,31 @@ svg {
   width: 100%;
 }
 
-.show-details {
-  padding-top: 100px;
-  padding-bottom: 60px;
+// .show-details {
+//   padding-top: 100px;
+//   padding-bottom: 60px;
 
-  h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-}
+//   h2 {
+//     font-size: 26px;
+//     margin-bottom: 20px;
+//     text-align: center;
+//     margin-bottom: 20px;
+//   }
+// }
 
-.show-details-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px 0;
-  border-bottom: 1px solid #ddd;
-  color: #666;
+// .show-details-row {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 24px 0;
+//   border-bottom: 1px solid #ddd;
+//   color: #666;
 
-  h4 {
-    font-size: 16px;
-    color: #111;
-  }
-}
+//   h4 {
+//     font-size: 16px;
+//     color: #111;
+//   }
+// }
 
 .btnContainer {
   display: flex;

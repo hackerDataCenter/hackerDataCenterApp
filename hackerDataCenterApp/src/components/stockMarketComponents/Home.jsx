@@ -107,6 +107,7 @@ const Home = () => {
           {/* <p>Search coins</p> */}
           <div className="home-search-input">
             <input
+              className="coinInput"
               type="text"
               placeholder="Search"
               value={store.query}
@@ -123,7 +124,7 @@ const Home = () => {
               <div key={coin.id} className="home-crypto">
                 <Link to={`/${coin.id}`}>
                   <span className="home-crypto-image">
-                    <img src={coin.image} />
+                    <img className="coinImg" src={coin.image} />
                   </span>
                   <span className="home-crypto-name">{coin.name}</span>
                   <span className="home-crypto-prices">
