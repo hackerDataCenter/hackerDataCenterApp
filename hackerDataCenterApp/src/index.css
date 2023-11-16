@@ -1,8 +1,28 @@
 * {
+  font-family: monospace;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
   font-size: 1rem;
+}
+
+
+.container {
+  /* width: 100vw; */
+  /* overflow-x: hidden; */
+  height: 100vh;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 30px repeat(4, 1fr); 
+  gap: 3px 3px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "newsTicker newsTicker newsTicker newsTicker"
+    "wetter stockMarket stockMarket tinder"
+    "news sthCoolLikeNasa sthCoolLikeNasa chat"
+    "news sthCoolLikeNasa sthCoolLikeNasa chat"
+    "deepL darknetMarket orderPizza quoteJokeFact";
+    background-color: #222426;
 }
 
 a {
@@ -10,26 +30,30 @@ a {
   color: #222426;
 }
 
-.container {  
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(4,25vh);
-  gap: 8px;
-  grid-auto-flow: row;
-  background-color: #222426;
+.newsTicker {
+  grid-area: newsTicker;
+  background-color: lightgrey;
 }
 
 .news { 
-  grid-area: 2 / 1 / 4 / 2;
-  overflow-y: scroll; 
+  grid-area: news;
+  overflow-y: scroll;
+  /* background-color: lightgrey; */
 }
 
-.wetter { 
-  grid-area: 1 / 1 / 2 / 2; 
+.sthCoolLikeNasa {
+  grid-area: sthCoolLikeNasa;
+  background-color: lightgrey;
 }
 
-.matrix { 
-  grid-area: 1 / 4 / 2 / 5; 
+
+.chat {
+  grid-area: chat;
+  overflow: auto;
+  min-width: 0;
+  min-height: 0;
+  background-color: lightgrey;
+
 }
 
 .matrixterminal{
@@ -37,44 +61,50 @@ a {
 }
 
 .quoteJokeFact {
-  grid-area: 4 / 4 / 5 / 5;
+  grid-area: quoteJokeFact;
   min-width: 0;
   min-height: 0;
   overflow: auto;
+  background-color: lightgrey;
 }
 
-.quoteJokeFactWrapper.expanded {
-  grid-area: 1 / 1 / 5 / 5;
+.orderPizza {
+  grid-area: orderPizza;
+  background-color: lightgrey;
 }
 
-.orderPizza { 
-  grid-area: 4 / 3 / 5 / 4; 
+.tinder {
+  grid-area: tinder;
+  background-color: lightgrey;
 }
 
-.chat { 
-  grid-area: 2 / 4 / 4 / 5; 
+.darknetMarket {
+  grid-area: darknetMarket;
+  background-color: lightgrey;
 }
 
-.erde { 
-  grid-area: 4 / 1 / 5 / 2; 
+
+.stockMarket {
+  grid-area: stockMarket;
+  /* scrollbar machen mit overflow:  */
+  overflow: scroll;
+  overflow-x: hidden;
+  min-width: 0;
+  min-height: 0;
+  background-color: lightgrey;
+
+  /* max-height: 33%; */
+  /* max-height: 1fr; */
+
 }
 
-.erdegif{
-  width: 370px;
+.deepL {
+  grid-area: deepL;
+  background-color: lightgrey;
 }
 
-.sthCoolLikeNasa { 
-  grid-area: 2 / 2 / 4 / 4; 
+.wetter {
+  grid-area: wetter;
+  background-color: lightgrey;
 }
 
-.darknetMarket { 
-  grid-area: 4 / 2 / 5 / 3; 
-}
-
-.stockMarket { 
-  grid-area: 1 / 2 / 2 / 4; 
-}
-
-.tinder { 
-  grid-area: 1 / 4 / 2 / 5; 
-}

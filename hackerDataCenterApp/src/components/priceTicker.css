@@ -1,0 +1,19 @@
+.portfolio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.portfolio-item {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.asset-name {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.asset-rate {
+  color: #00ff3c;
+}
