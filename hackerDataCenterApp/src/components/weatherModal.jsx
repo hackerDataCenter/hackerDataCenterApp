@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import styles from "./wetter.module.css"
+import styles from "./wetterModal.module.css"
 
 export const WeatherModal = () => {
   const [weatherData, setWeatherData] = useState()
