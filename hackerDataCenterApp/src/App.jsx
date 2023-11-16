@@ -45,7 +45,7 @@ function App() {
         <div className="chat"><button className="placeHolder-Button" onClick={(e) => modalHaendler(e, "chat")}></button></div>
         <div className="erde">
           <img src="https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-41-513_512.gif" alt="erde" className='erdegif' />
-          </div>
+        </div>
         <div className="sthCoolLikeNasa"><button className="placeHolder-Button" onClick={(e) => modalHaendler(e, "bitcoin")}>Bitcoin</button></div>
         <div className="darknetMarket"><button className="placeHolder-Button" onClick={(e) => modalHaendler(e, "darknetMarket")}>darknetMarket</button></div>
         <div className="stockMarket"><button className="placeHolder-Button" onClick={(e) => modalHaendler(e, "stockMarket")}>stockMarket</button></div>
