@@ -28,8 +28,12 @@ a {
   grid-area: 1 / 1 / 2 / 2; 
 }
 
-.Börse { 
+.matrix { 
   grid-area: 1 / 4 / 2 / 5; 
+}
+
+.matrixterminal{
+  width: 368px;
 }
 
 .quoteJokeFact {
@@ -51,8 +55,12 @@ a {
   grid-area: 2 / 4 / 4 / 5; 
 }
 
-.deepL { 
+.erde { 
   grid-area: 4 / 1 / 5 / 2; 
+}
+
+.erdegif{
+  width: 370px;
 }
 
 .sthCoolLikeNasa { 

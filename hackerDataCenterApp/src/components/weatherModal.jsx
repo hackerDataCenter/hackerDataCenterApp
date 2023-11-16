@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import styles from "./wetter.module.css"
+import styles from "./wetterModal.module.css"
 
 export const WeatherModal = () => {
   const [weatherData, setWeatherData] = useState()
@@ -46,6 +46,14 @@ export const WeatherModal = () => {
             <div className={styles.temp}>
               <p>Aktuell: {weatherData.main.temp}°C</p>
               <p>Gefühlt: {weatherData.main.feels_like}°C</p>
+            </div>
+            <div className={styles.temp2}>
+            <p>Mindestens: {weatherData.main.temp_min}°C</p>
+              <p>Höchstens: {weatherData.main.temp_max}°C</p>
+            </div>
+            <div className={styles.data}>
+              <p>Luftfeuchte: {weatherData.main.humidity}%</p>
+              <p>Luftdruck: {weatherData.main.pressure}pcl</p>
             </div>
             <div className={styles.weather}>
               <p>{weatherData.weather[0].description}</p>

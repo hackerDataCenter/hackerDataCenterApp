@@ -36,13 +36,13 @@
     cursor: pointer;
 }
 
-.temp, .weather {
+.temp, .temp2, .weather, .data {
     display: flex;
     justify-content: space-between;
     margin: 0.9rem 0;
 }
 
-.temp p, .weather p {
+.temp p, .temp2 p, .weather p, .data p {
     display: inline;
     width: 8rem;
 }
